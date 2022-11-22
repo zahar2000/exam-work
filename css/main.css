@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #ebe6e6;
+  border-radius: 50px;
+}
+.container {
+  display: grid;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+}
+.firstblok {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 180px;
+  width: 1110px;
+  height: 581px;
+  justify-content: center;
+
+  align-items: center;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-decoration: none;
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+}
+.image {
+  width: 465px;
+  height: 465px;
+  background: linear-gradient(180deg, #9dff95 0%, #5bc4ff 100%);
+  border-radius: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.watch {
+  width: 285px;
+  height: 285px;
+}
+.text {
+  display: block;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.bottom {
+  width: 218px;
+  height: 69px;
+  background: #000000;
+  border-radius: 100px;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.bottom:hover {
+  background-color: #8cef83;
+  transition: 1s;
+}
+h3 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 140%;
+  color: #000000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.text_befor_bottoms {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.card1 {
+  display: grid;
+  grid-template-rows: 120px auto;
+}
+/* ------------------- */
+.card2 {
+  display: grid;
+  justify-content: center;
+  row-gap: 40px;
+}
+.items {
+  display: flex;
+  gap: 40px;
+}
+.blok {
+  display: flex;
+  width: 77px;
+  height: 77px;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 136.7%;
+}
+.blok2 {
+}
+h4 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  padding-bottom: 11px;
+}
+h3 {
+  margin: auto;
+}
+.card3 {
+  display: grid;
+  background: linear-gradient(102deg, #e8ffe8 17.38%, #d1f0ff 81.25%);
+  border-radius: 60px;
+  grid-template-columns: auto auto;
+  column-gap: 100px;
+  max-width: 1110px;
+  min-height: 486px;
+  justify-items: center;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.bol {
+  padding-left: 120px;
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
+  cursor: pointer;
+}
+
+.bol:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.copir {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+@media (max-width: 990px) {
+  .firstblok {
+    grid-template-columns: auto;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 220px;
+    text-align: center;
+  }
+  .bottom {
+    margin: auto;
+  }
+  .card3 {
+    grid-template-columns: auto;
+    margin: auto;
+    margin-top: 60px;
+    max-width: 720px;
+    min-height: 900px;
+    text-align: center;
+    justify-items: center;
+  }
+  .bol {
+    padding: 0%;
+  }
+}
+@media (max-width: 600px) {
+  .image {
+    width: 320px;
+    height: 320px;
+  }
+  .watch {
+    width: 196px;
+    height: 196px;
+  }
+  .items {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .bol {
+    width: 201px;
+  }
+  .card3 {
+    grid-template-columns: 320px;
+    margin: auto;
+    margin-top: 60px;
+  }
+  br {
+    display: none;
+  }
+  .card2 {
+    grid-auto-columns: 320px;
+    margin: auto;
+    text-align: center;
+  }
+  .firstblok {
+    grid-template-columns: 320px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+  }
+}
